@@ -1,0 +1,38 @@
+<div class="ps-wtb-container ps-float-box">
+
+    <input class="ps-tab-input-online" type="radio" id="onlineTab" name="psTabGroup1" checked>
+    <input class="ps-tab-input-local" type="radio" id="localTab" name="psTabGroup1">
+
+    <div class="ps-header-container ps-float-box">
+        <div class="ps-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 11 11">
+                <path fillRule="evenodd" d="M 10.72 1.66C 10.72 1.66 6.87 5.5 6.87 5.5 6.87 5.5 10.72 9.34 10.72 9.34 10.72 9.34 10.72 9.34 10.72 9.34 10.89 9.52 11 9.76 11 10.03 11 10.57 10.57 11 10.03 11 9.76 11 9.52 10.89 9.34 10.72 9.34 10.72 9.34 10.72 9.34 10.72 9.34 10.72 5.5 6.87 5.5 6.87 5.5 6.87 1.66 10.72 1.66 10.72 1.66 10.72 1.66 10.72 1.66 10.72 1.48 10.89 1.24 11 0.97 11 0.43 11 0 10.57 0 10.03 0 9.76 0.11 9.52 0.28 9.34 0.28 9.34 0.28 9.34 0.28 9.34 0.28 9.34 4.13 5.5 4.13 5.5 4.13 5.5 0.28 1.66 0.28 1.66 0.28 1.66 0.28 1.66 0.28 1.66 0.11 1.48 0 1.24 0 0.97 0 0.43 0.43-0 0.97-0 1.24-0 1.48 0.11 1.66 0.28 1.66 0.28 1.66 0.28 1.66 0.28 1.66 0.28 5.5 4.13 5.5 4.13 5.5 4.13 9.34 0.28 9.34 0.28 9.34 0.28 9.34 0.28 9.34 0.28 9.52 0.11 9.76-0 10.03-0 10.57-0 11 0.43 11 0.97 11 1.24 10.89 1.48 10.72 1.66 10.72 1.66 10.72 1.66 10.72 1.66Z" />
+            </svg>
+        </div>
+      <div class="ps-header-containter ps-float-box">
+          {{#if product}}
+                <img src="{{{product.imageUrl}}}" />
+                <div class="ps-wtb-label">
+                  WHERE TO BUY
+                </div>
+                <div class="ps-product-details">
+                  {{{product.title}}}
+                </div>
+          {{/if}}
+
+    </div>
+    </div>
+
+    <div class= "ps-column-headers ps-float-box">
+      <label class="ps-online-tab-label" for="onlineTab">
+          Find Online
+      </label>
+      <label class="ps-local-tab-label" for="localTab">
+          Find Online
+      </label>
+
+    </div>
+
+
+
+</div>

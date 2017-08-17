@@ -1,0 +1,241 @@
+/** General Default Styles 1
+ ------------------------------------------------------------*/
+.ps-container {
+    font-family: Arial,Verdana,sans-serif;
+    color: #4a4a4a;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeLegibility;
+
+    /*Sends rendering to the GPU by tricking browser into thinking we're 3D. Makes animations faster*/
+    transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.ps-container * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+}
+.ps-float-box {
+    position: relative;
+    float: left;
+    text-align: left;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+    width: 100%;
+    height: auto;
+}
+.ps-wtb-container {
+    height: 100%;
+    background: #ebf8f9;
+}
+.ps-bold-text {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+.ps-container ::-ms-clear {
+    display: none;
+}
+.ps-container svg {
+    pointer-events: none;
+}
+.ps-container button, .ps-container button:focus, .ps-container select, .ps-container input, .ps-container input:focus {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.ps-container input {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ps-container a {
+    outline:none;
+    border:none;
+}
+input.ps-tab-input-online, input.ps-tab-input-local {
+  display: none;
+}
+
+/*Placeholder styles*/
+input.ps-map-location-textbox[type="text"]::-webkit-input-placeholder {
+    color:  #999;
+    font-weight: 400;
+}
+input.ps-map-location-textbox[type="text"]:-moz-placeholder {
+    color:  #999;
+    font-weight: 400;
+    opacity:  1;
+}
+input.ps-map-location-textbox[type="text"]::-moz-placeholder {
+    color:  #999;
+    font-weight: 400;
+    opacity:  1;
+}
+input.ps-map-location-textbox[type="text"]:-ms-input-placeholder {
+    color:   #999;
+    font-weight: 400;
+}
+input.ps-map-location-textbox[type="text"]::-ms-clear {
+    display: none;
+}
+/*remove select highlight on IE */
+input.ps-map-location-textbox[type="text"]:focus::-ms-value{
+    background-color: transparent;
+}
+
+@media screen and (max-width:1024px) {
+    .ps-wtb-container {
+        height: auto;
+    }
+}
+
+/** Lightbox Styles 1
+ ------------------------------------------------------------*/
+.ps-lightbox {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 980px;
+    max-height: 700px;
+    height: 80%;
+    min-height: 530px;
+    padding:0 0 0 0;
+    margin:0 auto;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    z-index: 9012 !important;
+    display: none;
+}
+#ps-lightbox-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    opacity:.70;
+    filter: alpha(opacity=70);
+    transition:.2s opacity, 0s z-index;
+    -moz-transition:.2s opacity, 0s z-index;
+    -webkit-transition:.2s opacity, 0s z-index;
+    z-index: 9011 !important;
+    display: none;
+}
+button.ps-lightbox-close {
+    display: none;
+}
+.ps-lightbox-close svg {
+    width: 11px;
+    height: 11px;
+    opacity: 0.75;
+}
+
+/******** Tablet: Lightbox Styles */
+@media screen and (max-width:1024px) {
+    .ps-lightbox {
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        overflow: auto;
+        box-shadow: none;
+    }
+    .ps-lightbox-close {
+        top: 20px;
+        right: 20px;
+    }
+    .ps-lightbox-close svg {
+        opacity: 1;
+    }
+}
+/******** Mobile: Lightbox Styles */
+@media screen and (max-width:767px) {
+    .ps-lightbox {
+        position: absolute;
+        min-height: 0;
+    }
+    #ps-lightbox-background {
+        opacity: 1;
+        background: #333;
+    }
+}
+
+/** Header Styles 1
+ ------------------------------------------------------------*/
+.ps-header-container {
+  padding: 20px;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+}
+.ps-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  background: lightblue;
+
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+
+
+  /*aligns in a line*/
+  display: flex;
+  /*centers veritcally - use when you have multiple items in something*/
+  align-items: center;
+  /*brings everything into center*/
+  justify-content: center;
+
+}
+
+.ps-lightbox-close path {
+  fill: #fff;
+}
+
+.ps-header-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.ps-wtb-label {
+  color: lightblue;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+
+}
+
+.ps-header-container img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  float: left;
+  box-shadow: 0px 3px 7px 0px rgba(46,46,46,0.2);
+}
+
+.ps-product-details {
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
