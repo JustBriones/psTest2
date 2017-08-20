@@ -185,7 +185,7 @@ button.ps-lightbox-close {
 }
 
 .ps-online-section {
-      width: 50%;
+      width: 45%;
 }
 .ps-lightbox-close {
   position: absolute;
@@ -251,14 +251,24 @@ button.ps-lightbox-close {
   background: #03a9f4;
 }
 
-.ps-online-tab-label, .ps-local-tab-label {
+.ps-online-tab-label {
   font-size: 22px;
   color: white;
   font-weight: bold;
   display: block;
   float: left;
-  width: 50%;
+  width: 45%;
   padding: 22px 0px 0px 22px;
+}
+
+.ps-local-tab-label {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  display: block;
+  float: left;
+  width: 55%;
+  padding: 22px 0px 0px 28px;
 }
 
 .ps-map-control {
@@ -304,6 +314,8 @@ svg {
 .ps-mag-icon svg {
   width: 15px;
   height: 15px;
+  color: grey;
+  fill: currentColor;
 }
 
 .ps-error-icon {
@@ -318,13 +330,15 @@ svg {
 .ps-map-geolocation-button svg {
   width: 13px;
   height: 13px;
+  color: red;
+  fill: currentColor;
 }
 
 .ps-online-seller-select {
 
   background: white;
   width: 100%;
-  height: 70px;
+  height: 74px;
 
 }
 
@@ -339,7 +353,7 @@ svg {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 3px 7px 0px rgba(46,46,46,0.2);
-  margin: 10px;
+  margin: 10px 10px -2px 10px;
 }
 
 .ps-seller-error-name {
@@ -348,6 +362,10 @@ svg {
 
 .ps-online-seller-listing-cell.ps-online-price-cell {
   margin-left: 35px;
+}
+
+.ps-online-seller-listing-cell.ps-online-buy-cell {
+  left: 14px;
 }
 
 .ps-in-stock {
@@ -365,4 +383,6 @@ svg {
   font-weight: bold;
   width: 65px;
   height: 35px;
+  border: none;
+  box-shadow: 0px 3px 7px 0px rgba(46,46,46,0.2);
 }
