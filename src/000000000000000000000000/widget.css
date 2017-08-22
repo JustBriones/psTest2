@@ -249,7 +249,7 @@ button.ps-lightbox-close {
 
 .ps-column-headers {
   width: 100%;
-  height: 60px;
+  height: 66px;
   background: #03a9f4;
 }
 
@@ -293,7 +293,7 @@ svg {
 }
 .ps-map-location-textbox {
   padding-left: 36px;
-  border-radius: 3px;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
   font-size: 17px;
@@ -309,7 +309,7 @@ svg {
 }
 .ps-mag-icon {
   position: absolute;
-  top: 12px;
+  top: 16px;
   right: 10px;
 }
 
@@ -326,7 +326,7 @@ svg {
 
 .ps-map-geolocation-button {
   left: 10px;
-  top: 15px;
+  top: 16px;
   border: none;
 }
 .ps-map-geolocation-button svg {
@@ -396,6 +396,13 @@ svg {
   padding: 10px 10px 10px 20px;
 }
 
+.ps-local-sellers {
+  height: 242px;
+  overflow: auto;
+  padding: 0px 8px 0 0px;
+  margin-top: 8px;
+}
+
 .ps-map-holder {
   width: 100%;
   height: 178px;
@@ -404,13 +411,83 @@ svg {
 }
 
 .ps-map-pushpin-select.ps-float-box {
-  /*background-color: white;*/
+  background-color: white;
   padding: 10px;
-  margin: 10px 10px 20px 0px;
-  height: 115px;
+  margin: 10px 10px -2px 0px;
+  height: 140px;
   width: 100%;
+  box-shadow: 0px 3px 7px 0px rgba(46,46,46,0.2);
 }
 
-.ps-local-sellers.ps-float-box {
-  /*overflow: auto;*/
+.ps-local-left-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ps-pushpin-wrapper img {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.ps-store-hours{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    height: 20px;
+    overflow: hidden;
+    color: #144e7d;
+    font-size: 15px;
+}
+.ps-distance {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.ps-local-section span, .ps-local-section .ps-in-stock {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.ps-local-seller-logo img {
+  position: absolute;
+  top: 20px;
+  left: 56px;
+}
+
+.ps-address {
+  position: absolute;
+  left: 168px;
+  top: 20px;
+  font-size: 15px;
+  width: 185px;
+}
+.ps-get-directions-button {
+  position: absolute;
+  left: 168px;
+  bottom: 15px;
+  color: #03a9f4;
+  fill: currentColor;
+}
+
+.ps-get-directions-button svg{
+  width: 13px;
+  height: 13px;
+}
+.ps-phone-icon {
+  display: none;
+}
+.ps-get-directions-button.ps-tablet {
+  display:none;
+}
+/*local availability*/
+.ps-local-availability {
+  display: none;
 }
