@@ -397,7 +397,7 @@ svg {
 }
 
 .ps-local-sellers {
-  height: 242px;
+  height: 230px;
   overflow: auto;
   padding: 0px 8px 0 0px;
   margin-top: 8px;
@@ -490,4 +490,70 @@ svg {
 /*local availability*/
 .ps-local-availability {
   display: none;
+}
+
+/*Footer*/
+.ps-footer-panel {
+  width: 100%;
+  height: 53px;
+  background-color: rgba(158, 158, 158, 0.42);
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+  padding-left: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(46,46,46,0.2);
+}
+.ps-copyright {
+  color: grey;
+}
+.ps-copyright a {
+  text-decoration: none;
+  color: grey;
+}
+
+.ps-footer-logo a svg {
+  width: 135px;
+  height: auto;
+  padding-top: 8px;
+  margin-right: 20px;
+}
+
+/***** Media queries *****/
+
+/*tablet, max-width 1024*/
+@media screen and (max-width: 1024px) {
+
+
+
+  .ps-local-container.ps-local-tab {
+    display: none;
+  }
+  .ps-online-container {
+    width: 100%;
+    padding: 0 20px 10px 0;
+  }
+  .ps-online-tab-label {
+        width: 15%;
+  }
+  .ps-online-seller-listing-cell.ps-online-buy-cell {
+    left: 150px;
+  }
+  .ps-online-seller-listing-cell.ps-online-price-cell {
+    margin-left: 90px;
+  }
+  .ps-in-stock {
+    margin-left: 100px;
+  }
+}
+
+/*phone, max-width 768px*/
+@media only screen and (max-width: 768px) {
+  .ps-local-container.ps-local-tab {
+    display: none;
+  }
+  .ps-online-container {
+    width: 100%;
+    padding: 0 20px 10px 0;
+  }
 }
