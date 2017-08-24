@@ -367,7 +367,8 @@ svg {
 }
 
 .ps-online-seller-listing-cell.ps-online-buy-cell {
-  left: 14px;
+  right: 4%;
+  width: 25%;
 }
 
 .ps-in-stock {
@@ -536,14 +537,9 @@ svg {
   .ps-online-tab-label {
         width: 15%;
   }
-  .ps-online-seller-listing-cell.ps-online-buy-cell {
-    left: 150px;
-  }
+
   .ps-online-seller-listing-cell.ps-online-price-cell {
     margin-left: 90px;
-  }
-  .ps-in-stock {
-    margin-left: 100px;
   }
 }
 
