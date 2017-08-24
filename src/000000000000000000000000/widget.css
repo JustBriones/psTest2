@@ -535,7 +535,7 @@ svg {
     padding: 0 20px 10px 0;
   }
   .ps-online-tab-label {
-        width: 15%;
+    width: 20%;
   }
 
   .ps-online-seller-listing-cell.ps-online-price-cell {
@@ -543,13 +543,107 @@ svg {
   }
 }
 
-/*phone, max-width 768px*/
-@media only screen and (max-width: 768px) {
-  .ps-local-container.ps-local-tab {
-    display: none;
+/*phone, max-width 767px*/
+@media only screen and (max-width: 767px) {
+  .ps-wtb-label {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    right: 7%;
+    font-size: 12px;
+    bottom: 10px;
   }
-  .ps-online-container {
+  .ps-product-details {
+    position: absolute;
+    font-size: 15px;
+    top: 120%;
+    left: 15%;
+  }
+  .ps-header-container {
+    height: 165px;
+  }
+  .ps-header-container img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 43%;
+    margin-top: 22px;
+  }
+  .ps-column-headers {
     width: 100%;
-    padding: 0 20px 10px 0;
+    height: 125px;
+    background: none;
+  }
+  .ps-online-tab-label, .ps-local-tab-label {
+    width: 50%;
+    height: 42px;
+    position: absolute;
+    top: 50%;
+    background: #03a9f4;
+    line-height: 2px;
+    font-size: 16px;
+  }
+  .ps-local-tab-label {
+    left: 50%;
+  }
+  .ps-input-holder {
+    height: 30px;
+    margin-top: 2%;
+  }
+  .ps-map-control {
+    width: 95%;
+    position: absolute;
+    left: 3%;
+    padding: 4px 0;
+  }
+  .ps-mag-icon, .ps-map-geolocation-button {
+    top: 7px;
+  }
+  .ps-online-seller-select.ps-online-seller-listing {
+    margin: -12px 10px 18px 10px;
+    height: 94px;
+  }
+  .ps-online-seller-listing-cell.ps-online-price-cell {
+    position: absolute;
+    font-size: 11px;
+    bottom: 6px;
+    left: 38px;
+    margin: 0;
+  }
+  .ps-online-seller-listing-cell img {
+    width: 70px;
+    height: 22px;
+    position: absolute;
+    left: 8px;
+    bottom: 2px;
+  }
+  .ps-online-buy-button {
+    width: 50px;
+    height: 28px;
+    position: absolute;
+    top: 5px;
+    right: -2%;
+  }
+  .ps-online-seller-listing-cell.ps-online-availability-cell {
+    position: absolute;
+    left: 80%;
+    top: 16px;
+  }
+  .ps-in-stock {
+    font-size: 12px;
+  }
+  .ps-in-stock svg {
+    height: 9px;
+    width: 9px;
+  }
+  .ps-lightbox-close {
+    width: 17px;
+    height: 17px;
+    top: 12px;
+  }
+  .ps-lightbox-close svg {
+    width: 7px;
+    height: 7px;
   }
 }
