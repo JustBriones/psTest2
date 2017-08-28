@@ -181,6 +181,9 @@ button.ps-lightbox-close {
   height: 150px;
   background: #fff;
 }
+.ps-container input {
+  width: 100%;
+}
 .ps-header-container img {
   width: 110px;
   height: 110px;
@@ -242,4 +245,63 @@ button.ps-lightbox-close {
   text-align: left;
   line-height: 20px;
   margin: 0;
+}
+/*error icons, display:none*/
+.ps-error-icon {
+  display: none;
+}
+/*map control box*/
+.ps-map-control {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.ps-input-holder {
+  position: relative;
+  height: 40px;
+  width: 265px;
+  display: flex;
+}
+.ps-map-geolocation-button {
+  padding: 3px 0 0 12px;
+  border: none;
+  background: transparent;
+  border: none;
+  width: 39px;
+  height: 40px;
+  position: absolute;
+}
+.ps-map-geolocation-button svg {
+  width: 14px;
+  height: 14px;
+  fill: #e9242c;
+}
+.ps-mag-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  text-align: right;
+  padding: 13px 13px 0 0;
+}
+.ps-mag-icon svg {
+  fill: rgba(74, 74, 74, 0.5);
+}
+.ps-map-location-textbox {
+  font-size: 16px;
+  padding: 0 40px 0 42px;
+  border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+}
+/*online section*/
+.ps-online-container {
+  width: 473px;
+}
+.ps-online-seller-listing {
+  height: 76px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 3px 7px 0px rgba(46, 46, 46, 0.1);
 }
