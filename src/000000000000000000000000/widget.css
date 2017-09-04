@@ -250,6 +250,9 @@ button.ps-lightbox-close {
 .ps-error-icon {
   display: none;
 }
+.ps-seller-error-name {
+  display: none;
+}
 /*map control box*/
 .ps-map-control {
   position: absolute;
@@ -299,9 +302,26 @@ button.ps-lightbox-close {
 .ps-online-container {
   width: 473px;
 }
+.ps-online-seller-listings {
+  padding: 5px;
+}
 .ps-online-seller-listing {
   height: 76px;
+  margin: 0 0 2.5px 0;
   background: #fff;
   border: 1px solid #e7e7e7;
   box-shadow: 0px 3px 7px 0px rgba(46, 46, 46, 0.1);
+}
+.ps-online-seller-listing-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+}
+.ps-online-seller-cell {
+  padding: 0 0 0 20px;
+}
+.ps-online-seller-cell img {
+  max-height: 30px;
 }
