@@ -198,7 +198,7 @@ button.ps-lightbox-close {
   right: 15px;
   width: 25px;
   height: 25px;
-  padding: 7px 0 0;
+  padding: 5px 0 0;
   text-align: center;
   border-radius: 50%;
   background: #19a5dc;
@@ -440,7 +440,63 @@ button.ps-lightbox-close {
   line-height: 18px;
   padding: 0 0 20px 0;
 }
+.ps-get-directions-button {
+  color: #013f81;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  width: auto;
+}
+.ps-get-directions-button svg {
+  fill: #19a5dc;
+}
+.ps-local-section-3 {
+  width: 28%;
+  text-align: right;
+}
+.ps-distance {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: right;
+  padding-bottom: 13px;
+}
+.ps-store-hours {
+  margin: 22px 0 0 0;
+  display: block;
+  float: right;
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+}
+.ps-hours-known {
+  position: relative;
+  float: right;
+  cursor: pointer;
+  width: auto;
+  white-space: nowrap;
+}
+/* Theres no data for the store hours label for some reason, check with Janna and handlebars*/
+.ps-store-hours-label {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  padding-bottom: 2px;
+}
+.ps-store-hours-today {
+  font-size: 13px;
+  line-height: 16px;
+  color: #013f81;
+}
+.ps-store-hours-tooltip {
+  display: none;
+}
 .ps-local-section-4 {
+  display: none;
+}
+.ps-local-section-5 {
   display: none;
 }
 .ps-footer-panel {
@@ -456,4 +512,24 @@ button.ps-lightbox-close {
   font-weight: 400;
   line-height: 16px;
   text-align: left;
+}
+.ps-footer-panel a {
+  font-family: Arial, sans-serif;
+  color: #999;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  text-decoration: none;
+  border: none;
+}
+.ps-footer-logo {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  line-height: 0;
+  padding: 0;
+  width: 152px;
+  height: 100%;
+  cursor: pointer;
 }
