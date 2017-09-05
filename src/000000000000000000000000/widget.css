@@ -301,6 +301,7 @@ button.ps-lightbox-close {
 /*online section*/
 .ps-online-container {
   width: 473px;
+  margin-top: 4px;
 }
 .ps-online-seller-listings {
   padding: 5px;
@@ -359,3 +360,100 @@ button.ps-lightbox-close {
   padding: 0;
 }
 /*---------- LOCAL SECTION ---------------*/
+.ps-local-container {
+  font-family: Arial, sans-serif;
+  right: 0;
+  width: 505px;
+  overflow: hidden;
+  height: 66%;
+}
+.ps-map-holder {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 175px;
+  max-height: 175px;
+  width: 490px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 3px 7px 0px rgba(46, 46, 46, 0.2);
+}
+.ps-local-sellers {
+  height: 50%;
+  margin: 190px 10px 0px 0;
+  overflow: auto;
+  padding: 0 2px 0 6px;
+}
+.ps-local-section {
+  display: inline-block;
+  float: left;
+}
+.ps-local-section-1 {
+  width: 32%;
+}
+.ps-map-pushpin-select {
+  min-height: 130px;
+  height: 80px;
+  margin: 2.5px 0;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 3px 7px 0px rgba(46, 46, 46, 0.1);
+}
+.ps-pushpin-wrapper {
+  position: relative;
+  float: left;
+  padding: 0;
+  width: 34px;
+  min-width: 34px;
+}
+.ps-pushpin {
+  height: 29px;
+  width: 19px;
+}
+.ps-local-seller-logo {
+  min-height: 56px;
+  flex: 1;
+  position: relative;
+  float: left;
+}
+.ps-local-availability {
+  position: absolute;
+  bottom: 19px;
+  left: 20px;
+  color: #999;
+  line-height: 13px;
+  text-align: left;
+  padding: 0;
+}
+.ps-local-availability.ps-tablet {
+  display: none;
+}
+.ps-local-section-2 {
+  width: 40%;
+  padding: 0 0 0 10px;
+}
+.ps-address {
+  color: #58585b;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 0 0 20px 0;
+}
+.ps-local-section-4 {
+  display: none;
+}
+.ps-footer-panel {
+  position: absolute;
+  bottom: 0;
+  height: 55px;
+  padding: 20px 0 0 20px;
+  background: #e7e7e7;
+  box-shadow: 0px -1px 5px 0px rgba(46, 46, 46, 0.2);
+  font-family: Arial, sans-serif;
+  color: #999;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
