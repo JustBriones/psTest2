@@ -298,7 +298,7 @@ button.ps-lightbox-close {
   border-radius: 3px;
   border: none;
 }
-/*online section*/
+/*------ online section -----------*/
 .ps-online-container {
   width: 473px;
   margin-top: 4px;
@@ -478,7 +478,6 @@ button.ps-lightbox-close {
   width: auto;
   white-space: nowrap;
 }
-/* Theres no data for the store hours label for some reason, check with Janna and handlebars*/
 .ps-store-hours-label {
   font-size: 13px;
   font-weight: 700;
@@ -532,33 +531,4 @@ button.ps-lightbox-close {
   width: 152px;
   height: 100%;
   cursor: pointer;
-}
-/*-------- button style ----------*/
-.ps-widget {
-  position: relative;
-  float: left;
-  clear: both;
-  text-align: center;
-  width: 170px;
-  height: 35px;
-  background: #f84e3d;
-  box-shadow: 0px 1px 0px 0px #ba3222;
-  margin: 0;
-  padding: 0;
-  display: block;
-  visibility: visible;
-}
-.ps-widget span {
-  font-family: Arial,Verdana,sans-serif;
-  text-align: center;
-  word-wrap: normal;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 36px;
-  text-shadow: 0px 1px 0px rgba(186, 50, 34, 0.6);
-}
-.ps-widget:hover {
-    box-shadow: none;
-    top: 1px;
 }

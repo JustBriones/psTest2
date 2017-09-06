@@ -2,7 +2,7 @@ PriceSpider.onload('000000000000000000000000/config', {
     "loadButtonCss": true,
     "widgetType": "lightbox",
     "loadLocalStock": true,
-    "loadResources": false,
+    "loadResources": true,
     "mapKey": "pk.eyJ1IjoicHJpY2VzcGlkZXIiLCJhIjoiY2lyNmkzdXZ6MDBkeGcybmZkenZrdWlmOSJ9.04p3f9FWK4cjJYG6Yb7fMA",
     "loadIpLocation": false,
     "loadBrowserLocation": true,
@@ -35,7 +35,7 @@ PriceSpider.onload('000000000000000000000000/config', {
          "en": {
             "wtbButtonLabel": "Where to Buy",
             "wtbButtonDisabledNoSellers": "No Sellers Found",
-            "wtbButtonDisabledNoSku": "No Sellers Found",  
+            "wtbButtonDisabledNoSku": "No Sellers Found",
             "distanceUnits": {
                 "miles": "mi",
                 "kilometers": "km"
